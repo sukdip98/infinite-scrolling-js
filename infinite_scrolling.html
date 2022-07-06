@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            /* height:90%;
+            width:100%; */
+            /* height: 90vh; */
+            border: 1p-x solid black;
+            
+        }
+        header{
+            height: 10vh;
+            width: 100%;
+            background-color: grey;
+            top: 0;
+            position: sticky;
+            z-index: 5;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            height: 10vh;
+            align-items:center;
+        }
+        li{
+            list-style: none;
+            cursor: pointer;
+        }
+        .photos{
+            height: 100%;
+            width: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            
+        }
+        img{
+            width: 30%;
+            height: 30%;
+            margin: 1vw 1vw;
+            /* object-fit: contain; */
+        }
+        .show{
+            opacity: 1;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="photos">
+
+        </div>
+       <h3 style="text-align: center;" id="loader">Loading...</h3>
+    </div>
+    <script src="infinite_scrolling.js"></script>
+</body>
+</html>
